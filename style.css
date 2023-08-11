@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0%;
+    align-items: center;
+    background-color:yellowgreen;
+}
+
+.container {
+  display: flex;
+  width: 440px;
+  flex-direction: column;
+  height: 440px;
+  background-color: white;
+  border: 10px solid rgb(219, 255, 165);
+  margin-left: 10rem;
+  margin-top: 20px;
+}
+
+.control-panel {
+  width: 220px;
+  height: 430px;
+  background-color: white;
+  border: 20px solid rgb(219, 255, 165);
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+button{
+  margin-top: 30px;
+  width: 100px;
+  height: 40px;
+  background-color: pink;
+}
+
+.main-container {
+  height: 1000px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+.title {
+  font-size: 50px;
+  border: 1px solid black;
+  margin: 30px;
+  font-style: italic;
+  color: white;
+  font-weight: 900;
+}
+
+
+
