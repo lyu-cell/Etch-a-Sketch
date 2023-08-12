@@ -1,22 +1,34 @@
-
 const grid = document.querySelector(".grid-size");
+
 grid.addEventListener("click", () => {
-    const userInput = prompt("Enter a Number Under 100");
+    let userInput = prompt("Enter a Number Under 100");
 
-    // the grid creation loops
-    for (let i = 0; i < userInput; i++) {
+    if (userInput <= 100) {
 
-        const container = document.querySelector(".container")
-        const div = document.createElement("div");
-        div.classList.add("column");
-        div.setAttribute("style", " display: flex; flex: 1; border: 1px solid green;");
-        container.appendChild(div);
-    
         for (let i = 0; i < userInput; i++) {
-            const squareDiv = document.createElement("div");
-            squareDiv.setAttribute("style", "flex: 1; background-color: black; border: 1px solid white;");
-            div.appendChild(squareDiv)
-        }
+            const container = document.querySelector(".container")
+            const div = document.createElement("div");
+            div.classList.add("column");
+            div.setAttribute("style", " display: flex; flex: 1; border: 1px solid green;");
+            container.appendChild(div);
         
-    }
-})
+            for (let i = 0; i < userInput; i++) {
+                const squareDiv = document.createElement("div");
+                squareDiv.classList.add("div1")
+                squareDiv.setAttribute("style", "flex: 1; background-color: black; border: 1px solid white;");
+                div.appendChild(squareDiv)
+            }
+        }
+    } 
+    
+    else if (userInput > 100) {
+        alert("Number Is Too high!")
+    } 
+    
+    else (
+        alert("Enter Only Numbers")
+    )
+
+});
+
+const div = document.querySelector()

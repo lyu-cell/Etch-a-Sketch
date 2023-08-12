@@ -4,7 +4,7 @@ body {
     height: 100vh;
     margin: 0%;
     align-items: center;
-    background-color:yellowgreen;
+    background-color:lightpink;
 }
 
 .container {
@@ -16,6 +16,7 @@ body {
   border: 10px solid rgb(219, 255, 165);
   margin-left: 10rem;
   margin-top: 20px;
+  box-shadow: 0px 0px 30px 0px ;
 }
 
 .control-panel {
@@ -28,6 +29,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  box-shadow: 0px 0px 17px 0px;
+  margin-top: 7px;
 }
 
 button{
@@ -35,6 +38,8 @@ button{
   width: 100px;
   height: 40px;
   background-color: pink;
+  box-shadow: 0px 0px 15px 0px black;
+  font-style: italic;
 }
 
 .main-container {
@@ -43,16 +48,18 @@ button{
   flex-direction: row-reverse;
   width: 100%;
   justify-content: space-around;
-  border: 1px solid black;
+  margin-top: 14px;
 }
 
 .title {
   font-size: 50px;
-  border: 1px solid black;
   margin: 30px;
   font-style: italic;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 900;
+  box-shadow: 0px 0px 20px 0px rgb(59, 78, 7) ;
+  width: 400px;
+  text-align: center;
 }
 
 
