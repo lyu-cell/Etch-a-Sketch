@@ -1,5 +1,7 @@
 const grid = document.querySelector(".grid-size");
 
+// responsive grid related functions and loops
+
 grid.addEventListener("click", () => {
     let userInput = prompt("Enter a Number Under 100");
 
