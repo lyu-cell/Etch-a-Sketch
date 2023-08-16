@@ -4,15 +4,14 @@ const subcontainer = document.createElement("div");
 subcontainer.setAttribute("style", "display: flex; width: 440px; height: 440px; flex-direction: column; background-color: white;")
 container.appendChild(subcontainer)
 
-let counter = 0;
 
 grid.addEventListener("click", () => {
 
-    let userInput = prompt("Enter a Number Under 100");
+    let userInput = prompt("Enter a Number Under 64 grid squares");
 
     
 
-    if (userInput <= 100) {
+    if (userInput <= 64) {
         
         while(subcontainer.firstChild) {
             subcontainer.removeChild(subcontainer.firstChild)
@@ -22,7 +21,6 @@ grid.addEventListener("click", () => {
             
             const div = document.createElement("div");
             div.classList.add("column");
-            counter += 1;
             div.setAttribute("style", " display: flex; flex: 1;");
             subcontainer.appendChild(div);
 
@@ -49,7 +47,7 @@ grid.addEventListener("click", () => {
 
    
     
-    else if (userInput > 100) {
+    else if (userInput > 64) {
         alert("Number Is Too high!")
     } 
     
@@ -57,5 +55,4 @@ grid.addEventListener("click", () => {
         alert("Enter Only Numbers")
     )
 });
-
 
